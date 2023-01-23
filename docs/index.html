@@ -6,24 +6,25 @@
   <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
     <meta charset="utf-8">
   <style>
-    body {padding-top: 10px;
+    body {background-color: lightgray;
+          padding-top: 10px;
           padding-bottom: 10px;
         }
-    .mainimage {
-      width: 20px;
-      height: 20px;
-      object-fit: cover;
+    .thumbnailimage {
+      width: 30px;
+      height: 30px;
+      object-fit: scale-down;
      }   
     .banner-image {
-      width: 128px;
-      height: 128px;
-      object-fit: cover;
-      border-radius: 128px;
+      width: 250px;
+      height: 250px;
+      object-fit: scale-down;
+      border-radius: 250px;
     }
     .button {
-    color: teal;
-    border: 1px teal solid;
-    border-radius: 5px;
+    color: royalblue;
+    border: 1px royalblue solid;
+    border-radius: 8px;
     text-decoration: none;
     width: 100%;
     display: inline-block;
@@ -32,27 +33,103 @@
     padding-bottom: 0.25em;
     transition: background-color .3s linear;
 }
+.row-center {
+  display: flex;
+  justify-content: center;
+}
+
+.one-quarter {
+  width: 24%;
+}
+
+.fontsize {
+  font-size: 30px;
+}
+
+.mb-medium {
+  margin-bottom: 10px;
+}
+
+.mb-large {
+  margin-bottom: 20px;
+}
+
+.mright {
+  margin-right: 20px;
+}
+
 </style>
 </head>
 <body>
-    <div>
+    <div class="row-center">
+      <div class="mb-medium">
       <img src="Jack Huguenin-4.jpg" class="banner-image">
+      </div>
     </div>
-
-    <div class="name">
-      Jack Huguenin
+      
+    <div class="row-center">
+      <div class="mb-large">
+        <div class="fontsize">
+          <strong>Jack Huguenin</strong>
+        </div>
+      </div>
     </div>
    
-    <div class="socials">
-      <a href="https://github.com/Jhuguenin-code" target="_blank">GitHub
-      </a>
+    <div class="row-center">
+      <img src="Github thumbnail.png" class="thumbnailimage mright">
+      <div class="one-quarter">
+        <div class="mb-large">
+          <a class="button" href="https://github.com/Jhuguenin-code" target="_blank">GitHub
+          </a>
+        </div>
+      </div>
     </div>
-    <div class=""socials">
-      <a href="https://www.linkedin.com/in/john-huguenin-83bba9173" target="blank">LinkedIn
-      </a>
-    </div>
-    
+      <div class="row-center">
+        <img src="LinkedIn thumbnail.png" class="thumbnailimage mright">
+        <div class="one-quarter">
+        <div class="mb-large"> 
+        <a class="button" href="https://www.linkedin.com/in/john-huguenin-83bba9173" target="blank">LinkedIn
+        </a>
+        </div>
+        </div>
+      </div>
+      <div class="row-center">
+        <img src="ted.png" class="thumbnailimage mright">
+        <div class="one-quarter">
+        <div class="mb-large">
+        <a class="button" href="https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator?language=en" target="blank">Favorite Ted talk--procrastination
+        </a>
+        </div>
+        </div>
+      </div>   
       
-    
+      <div class="row-center">
+        <img src="pubspeaking.png" class="thumbnailimage mright">
+        <div class="one-quarter">
+        <div class="mb-large">
+        <a class="button" href="https://professional.dce.harvard.edu/blog/10-tips-for-improving-your-public-speaking-skills/" target="blank">Public speaking tips
+        </a>
+        </div>
+        </div>
+      </div> 
+
+      <div class="row-center">
+        <img src="swissflag.png" class="thumbnailimage mright">
+        <div class="one-quarter">
+        <div class="mb-large">
+        <a class="button" href="https://www.usnews.com/news/best-countries/articles/2022-09-27/a-strong-economy-and-quality-of-life-make-switzerland-best-country-in-the-world" target="blank">Why Switzerland is the world's greatest country
+        </a>
+        </div>
+        </div>
+      </div>    
+      <div class="row-center">
+        <img src="tennisball.jpeg" class="thumbnailimage mright">
+        <div class="one-quarter">
+        <div class="mb-large">
+        <a class="button" href="https://www.youtube.com/watch?v=ne6hTv4SrvI" target="blank">Top tennis shots of 2010s
+        </a>
+        </div>
+        </div>
+      </div> 
   </body>
 </html>
